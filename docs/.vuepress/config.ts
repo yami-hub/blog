@@ -159,17 +159,17 @@ module.exports = {
                 },
             },
         ],
-        [
-            '@vuepress/last-updated', // "上次更新"时间格式
-            {
-                transformer: (timestamp, lang) => {
-                    // 不要忘了安装 moment
-                    const moment = require('moment')
-                    moment.locale(lang)
-                    return moment(timestamp).fromNow()
-                }
-            }
-        ],
+        // [
+        //     '@vuepress/last-updated', // "上次更新"时间格式
+        //     {
+        //         transformer: (timestamp, lang) => {
+        //             // 不要忘了安装 moment
+        //             const moment = require('moment')
+        //             moment.locale(lang)
+        //             return moment(timestamp).fromNow()
+        //         }
+        //     }
+        // ],
     ],
     markdown: {
         lineNumbers: true,
