@@ -39,6 +39,7 @@ module.exports = {
                     {
                         text:'学习笔记',
                         items:[
+                            { text: '《CSS教程》',link:'/note/css/'},
                             { text: '《JavaScript教程》', link: '/note/javascript/' },
                             { text: '《ES6教程》', link: '/note/es6/' },
                             { text: '《Git》', link: '/note/git/'},
@@ -75,6 +76,7 @@ module.exports = {
                 link: '/archives/',
                 items: [
                     { text: '标签', link: '/tags/' },
+                    { text: '分类', link:'/categories/'},
                     { text: '归档', link: '/archives/' },
                 ],
             },
@@ -85,9 +87,10 @@ module.exports = {
         searchMaxSuggestions: 10, // 搜索结果显示最大数
         lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
         docsDir: 'docs', // 编辑的文件夹
+        docsBranch: 'main', //编辑在main分支下
         editLinks: true, // 启用编辑
         editLinkText: '编辑',
-        category: false, //关闭分类
+        category: true, //关闭分类
         // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示： 目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
         sidebar: 'structuring',
         // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
@@ -126,7 +129,7 @@ module.exports = {
         footer: {
             createYear: 2022, // 博客创建年份
             copyrightInfo:
-                'Yamin | <a href="https://github.com/yamin-hub/blog/main/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
+                'Yamin | <a href="https://github.com/yamin-hub/blog/blob/main/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
         },
         // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
         extendFrontmatter: {
@@ -134,7 +137,6 @@ module.exports = {
                 name: 'yami',
                 link: 'https://github.com/yamin-hub'
             },
-            categories:''
         },
     },
 
@@ -159,17 +161,6 @@ module.exports = {
                 },
             },
         ],
-        // [
-        //     '@vuepress/last-updated', // "上次更新"时间格式
-        //     {
-        //         transformer: (timestamp, lang) => {
-        //             // 不要忘了安装 moment
-        //             const moment = require('moment')
-        //             moment.locale(lang)
-        //             return moment(timestamp).fromNow()
-        //         }
-        //     }
-        // ],
     ],
     markdown: {
         lineNumbers: true,

@@ -1,7 +1,6 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": " cross-env NODE_ENV=development vuepress dev docs",
@@ -14,12 +13,22 @@
     "vuepress": "^1.9.7"
   },
   "dependencies": {
-    "@vuepress/plugin-last-updated": "^1.9.7",
     "cross-env": "^7.0.3",
-    "moment": "^2.29.3",
     "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-zooming": "^1.1.8",
     "vuepress-theme-vdoing": "^1.11.2"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamin-hub/blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yamin-hub/blog/issues"
+  },
+  "homepage": "https://github.com/yamin-hub/blog#readme",
+  "description": ""
 }
