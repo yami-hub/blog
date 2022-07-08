@@ -42,7 +42,9 @@ module.exports = {
                             { text: '《CSS教程》',link:'/note/css/'},
                             { text: '《JavaScript教程》', link: '/note/javascript/' },
                             { text: '《ES6教程》', link: '/note/es6/' },
-                            { text: '《Git》', link: '/note/git/'},
+                            { text: '《Ajax教程》', link: '/note/ajax/' },
+                            { text: '《Vue教程》', link: '/note/vue/' },
+
                         ]
                     }
                 ]
@@ -53,8 +55,13 @@ module.exports = {
             },
             {
                 text:'技术',
-                link:'/technology/'
+                link:'/technology/',
+                items: [
+                    { text: 'Git', link: '/note/git/'},
+                    {text:'axios',link:'/pages/12abaa/'}
+                ]
             },
+
             {
                 text:'项目',
                 link:'/projects/'
