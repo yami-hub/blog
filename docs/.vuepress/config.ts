@@ -107,7 +107,7 @@ module.exports = {
         },
         // 博主信息 (显示在首页侧边栏)
         blogger: {
-            avatar: '/img/avatar.webp',
+            avatar: '/img/favicons/avatar.webp',
             name: 'Yami',
             slogan: '前端初学者',
         },
