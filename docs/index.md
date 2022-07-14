@@ -1,11 +1,11 @@
 ---
 home: true
-# heroImage: /img/web.png
+# heroImage: /img/favicons/web.png
 heroText: Yami's blog
 tagline: 不积跬步无以至千里，不积小流无以成江海。
 # actionText: 立刻进入 →
 # actionLink: /web/
-bannerBg: /img/home.webp
+bannerBg: /img/favicons/home.webp
 
 features: # 可选的
 - title: 前端
